@@ -25,28 +25,47 @@ function AddDice(total, num){
 }
 
 function compressDice(item){
+	
+
 	let roll =rollDie();
+	//find a way to get the roll 
 	let total = roll.reduce(AddDice);
 	let value
 	console.log(total);
 
-	
 
-	
+
+//function () {
+	// body...
+//}
 }
+
+//function startGame (){
+	//let numberOfPlayers = prompt();
+	//let number = parseInt(numberOfPlayers);
+	//let allDie = [number]
+	//if (number > 0){
+		//return allDie;
+	//}
+
+//}
+
+//startGame(); 
 
 //Make the function where it takes the user input for number of players and that input decides how many times the compressDice function runs. 
-function startGame(message){
-	let numberOfPlayers = prompt(message);
+//function startGame(message){
+	//let numberOfPlayers = prompt(message);
 	//Make the input for number of players go into an array and then 
-	let allPlayers = 
-}
+	//let allPlayers = 
+//}
 
 
 
-let scoring 
 
 
+
+compressDice();
+compressDice();
 compressDice();
 
 	// body...
