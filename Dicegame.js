@@ -15,65 +15,62 @@
 	//return diceRoll;
 //}
 //have the rollTheDie function take the number of dice that are thrown from dice to be rolled and then have it go through an array and do the random function for each array input
-function rollTheDie(sides) {
+function rollTheDie() {
 	//let diceTotal = [];
 	//let dice = [4, 6, 8, 10, 12, 20];
-	let roll = Math.floor((Math.random()* sides) +1);
+	let allDice = [4, 6, 8, 10, 12, 20];
+	let arrayLength = allDice.length;
+	for (let i=0; i<arrayLength; i++){
+			let numbers = Math.floor((Math.random()* allDice[i]) +1);
+			let dieArray = [numbers];
+
+			
+	}
+	//let roll = Math.floor((Math.random()* sides) +1);
 	//let dice = [4, 6, 8, 10, 12, 20];
 	//for (i = 0; i<6; i++){
 		//diceTotal.push(roll);
 	//}
-	return roll;
+	//return roll;
 	// body...
 }
 
-
-function numberOfDice(message){
-	let allDie = [4, 6, 8, 10, 12, 20];
+rollTheDie();
 
 
-}
+//}
 
-function numberOfDiceToBeRolled(message) {
-	let die = prompt (message);
-	switch(die){
-		default:
-			alert("Please enter 4, 6, 8, 10, 12, or 20.");
-			prompt(" ");
-		case "4":
-			return die;
-			break;
-		case "6":
-			return die;
-			break;
-		case "8":
-			return die;
-			break;
-		case "10":
-			return die;
-			break;
-		case "12":
-			return die;
-			break;
-		case "20":
-			return die;
-			break;
-		
+//function diceToBeRolled() {
+	//let die = prompt ();
+	
+	//switch(die){
+	
+		//case "4":
+		//case "6":
+		//case "8":
+		//case "10":
+		//case "12":
+		//case "20":
+			//return die;
+			//break;
+		//default:
+			//alert("Please enter 4, 6, 8, 10, 12, or 20.");
+			//return diceToBeRolled(message);
+			//break;		
 
-
-
-	}
-	let number = parseInt(die);
+	//}
+//}
+	//let number = parseInt(die);
 	
 
-	if (number === 4 | number === 6 | number === 8 | number === 10 | number === 12 | number === 20){
-		return number;
+	//if (number === 4 | number === 6 | number === 8 | number === 10 | number === 12 | number === 20){
+		//return number;
 	// body...
-	}
-	else {
-		alert("Please enter 4, 6, 8, 10, 12, or 20.");
-	}
-}
+	//}
+	//else {
+		//alert("Please enter 4, 6, 8, 10, 12, or 20.");
+	//}
+//}
 
 //function groupDice(number) {
 	//let results = [];
@@ -91,11 +88,24 @@ function numberOfDiceToBeRolled(message) {
 
 
 
-function diceCheck() {
-	let userInput = diceToBeRolled("Please roll the 4 sided dice, then the 6, 8, 10, 12, and 20.");
-	let outcome = rollTheDie(userInput);
-	console.log(outcome);
-}
+//function diceCheck() {
+	//let userInput = diceToBeRolled("Please roll the 4 sided dice, then the 6, 8, 10, 12, and 20.");
+	//let outcome = rollTheDie(userInput);
+	//return outcome;
+	//console.log(outcome);
+//}
+	
+
+//function resultArray(){
+	//let arrayOne = [];
+	//arrayOne.push(diceCheck);
+
+//}
+
+//resultArray();
+
+
+
 	//let allDiceThrown = [];
 	//for (var i = 0; i < 6; i++) {
 		//let userInput = diceToBeRolled("Please roll the 4 sided dice, then the 6, 8, 10, 12, and 20.");
@@ -115,11 +125,19 @@ function diceCheck() {
 
 
 //have the diceCheck function run multiple times and 
-function diceArray(){
-	let totalRolls = [1, 2, 3, 4, 5, 6];
+//function diceArray(){
+	
+	//let totalRolls = [1, 2, 3, 4, 5, 6];
+	//for (let i=0; i<totalRolls.length; i++){
+		//diceToBeRolled();
+		//let arrayDice = diceToBeRolled();
+		//console.log(arrayDice);
+
+	//}
+//}
 
 
-
+//diceArray();
 //diceCheck();
 //diceCheck();
 //diceCheck();
