@@ -14,18 +14,32 @@
 	//let diceRoll = [fourSidedDice,sixSidedDice,eightSidedDice,tenSidedDice,twelveSidedDice,twentySidedDice];
 	//return diceRoll;
 //}
-
+//have the rollTheDie function take the number of dice that are thrown from dice to be rolled and then have it go through an array and do the random function for each array input
 function rollTheDie(sides) {
-
+	//let diceTotal = [];
+	//let dice = [4, 6, 8, 10, 12, 20];
 	let roll = Math.floor((Math.random()* sides) +1);
-return roll;
+	//let dice = [4, 6, 8, 10, 12, 20];
+	//for (i = 0; i<6; i++){
+		//diceTotal.push(roll);
+	//}
+	return roll;
 	// body...
 }
 
 
-function diceToBeRolled(message) {
+function numberOfDice(message){
+	let allDie = [4, 6, 8, 10, 12, 20];
+
+
+}
+
+function numberOfDiceToBeRolled(message) {
 	let die = prompt (message);
 	switch(die){
+		default:
+			alert("Please enter 4, 6, 8, 10, 12, or 20.");
+			prompt(" ");
 		case "4":
 			return die;
 			break;
@@ -44,14 +58,14 @@ function diceToBeRolled(message) {
 		case "20":
 			return die;
 			break;
-		default:
-			alert("Please enter 4, 6, 8, 10, 12, or 20.");
-			prompt(message);
+		
 
 
 
 	}
 	let number = parseInt(die);
+	
+
 	if (number === 4 | number === 6 | number === 8 | number === 10 | number === 12 | number === 20){
 		return number;
 	// body...
@@ -61,15 +75,63 @@ function diceToBeRolled(message) {
 	}
 }
 
+//function groupDice(number) {
+	//let results = [];
+
+	// body...
+//}
+
+
+//function getArray(sides) {
+	//let groupOfDice = [];
+	//while ()
+	// body...
+//}
+
+
+
 
 function diceCheck() {
-	let userInput = diceToBeRolled("What sided dice do you want to roll?");
+	let userInput = diceToBeRolled("Please roll the 4 sided dice, then the 6, 8, 10, 12, and 20.");
 	let outcome = rollTheDie(userInput);
 	console.log(outcome);
-	// body...
 }
+	//let allDiceThrown = [];
+	//for (var i = 0; i < 6; i++) {
+		//let userInput = diceToBeRolled("Please roll the 4 sided dice, then the 6, 8, 10, 12, and 20.");
+		//let outcome = rollTheDie(userInput);
+		//let allDiceThrown = [];
+		//if (userInput === 4 && userInput === 6 && userInput === 8 && userInput === 10 && userInput === 12 && userInput === 20) {
+			//allDiceThrown.push(outcome);
+			//console.log(allDiceThrown);
+		//}
 
-diceCheck();
+	//}
+	
+
+	//console.log(allDiceThrown);
+	// body...
+//}
+
+
+//have the diceCheck function run multiple times and 
+function diceArray(){
+	let totalRolls = [1, 2, 3, 4, 5, 6];
+
+
+
+//diceCheck();
+//diceCheck();
+//diceCheck();
+//diceCheck();
+//diceCheck();
+//diceCheck();
+
+
+//create a for loop that runs the function again. Possibly 6 times because that's what my game needs. 
+//Also create an array for the loop that pushes the values in the array
+
+//
 //rollTheDie();
 
 //Make a function that finds the number of sides and validates if it is correct 
