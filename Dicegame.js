@@ -4,28 +4,67 @@
 //Make a function that checks all 6 numbers and logs a score based on the conditions
 
 
-//function rollDie (){
-	//let fourSidedDice= Math.floor((Math.random()*4) +1);
-	//let sixSidedDice=Math.floor((Math.random()*6) +1);
-	//let eightSidedDice=Math.floor((Math.random()*8) +1);
-	//let tenSidedDice=Math.floor((Math.random()*10) +1);
-	//let twelveSidedDice=Math.floor((Math.random()*12) +1);
-	//let twentySidedDice=Math.floor((Math.random()*20) +1);
-	//let diceRoll = [fourSidedDice,sixSidedDice,eightSidedDice,tenSidedDice,twelveSidedDice,twentySidedDice];
-	//return diceRoll;
+function rollDie (){
+	let fourSidedDice= Math.floor((Math.random()*4) +1);
+	let sixSidedDice=Math.floor((Math.random()*6) +1);
+	let eightSidedDice=Math.floor((Math.random()*8) +1);
+	let tenSidedDice=Math.floor((Math.random()*10) +1);
+	let twelveSidedDice=Math.floor((Math.random()*12) +1);
+	let twentySidedDice=Math.floor((Math.random()*20) +1);
+	let diceRoll = [fourSidedDice,sixSidedDice,eightSidedDice,tenSidedDice,twelveSidedDice,twentySidedDice];
+	return diceRoll;
+	//console.log(diceRoll);
+}
+
+//rollDie();
+
+//diceRoll.prototype.removeIf = rollDie
+
+function AddDice(total, num){
+	return total + num;
+}
+
+function compressDice(item){
+	let roll =rollDie();
+	let total = roll.reduce(AddDice);
+	let value
+	console.log(total);
+
+	
+
+	
+}
+
+//Make the function where it takes the user input for number of players and that input decides how many times the compressDice function runs. 
+function startGame(message){
+	let numberOfPlayers = prompt(message);
+	//Make the input for number of players go into an array and then 
+	let allPlayers = 
+}
+
+
+
+let scoring 
+
+
+compressDice();
+
+	// body...
+//if the rolls includes a 1 and 4 remove those values (or keep them but add the remaining values)
+
 //}
 //have the rollTheDie function take the number of dice that are thrown from dice to be rolled and then have it go through an array and do the random function for each array input
-function rollTheDie() {
+//function rollTheDie() {
 	//let diceTotal = [];
 	//let dice = [4, 6, 8, 10, 12, 20];
-	let allDice = [4, 6, 8, 10, 12, 20];
-	let arrayLength = allDice.length;
-	for (let i=0; i<arrayLength; i++){
-			let numbers = Math.floor((Math.random()* allDice[i]) +1);
-			let dieArray = [numbers];
+	//let allDice = [4, 6, 8, 10, 12, 20];
+	//let arrayLength = allDice.length;
+	//for (let i=0; i<arrayLength; i++){
+			//let numbers = Math.floor((Math.random()* allDice[i]) +1);
+			//let dieArray = [numbers];
 
 			
-	}
+	//}
 	//let roll = Math.floor((Math.random()* sides) +1);
 	//let dice = [4, 6, 8, 10, 12, 20];
 	//for (i = 0; i<6; i++){
@@ -33,9 +72,9 @@ function rollTheDie() {
 	//}
 	//return roll;
 	// body...
-}
+//}
 
-rollTheDie();
+//rollTheDie();
 
 
 //}
